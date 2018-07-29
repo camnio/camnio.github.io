@@ -38,7 +38,7 @@ img {
 }
 .spin {
   position: absolute;
-  left: 0px;
+  top: 0px;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
