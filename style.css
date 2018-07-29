@@ -22,6 +22,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 500;
+  width: 60%;
+  border: 1px solid green;
  }
 img {
   border: 1px solid red;
@@ -31,14 +33,12 @@ img {
   z-index: 499;
 }
 #delay {
-  transition-delay: 2s;
-  -webkit-transition-delay: 2s;
-  transition-property: transform;
-  color: red;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  color: yellow;
 }
 .spin {
-  position: absolute;
-  top: 0px;
+  display: inline;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
