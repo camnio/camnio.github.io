@@ -6,6 +6,10 @@ html, body {
 	padding: 0;
 	
 }
+h2{
+	text-align: center;
+	color: white;
+}
 
 body {
 	background-color: #FAF1DE;
