@@ -11,3 +11,8 @@ h1 {
   margin: 0px;
   font-family: arial;
 }
+img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
