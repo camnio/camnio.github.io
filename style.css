@@ -12,6 +12,7 @@ h1 {
   font-family: arial;
 }
 img {
+  border: 1px solid red;
   width: 60%;
   display: block;
   margin: 0 auto;
