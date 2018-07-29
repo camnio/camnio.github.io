@@ -9,6 +9,7 @@ html, body {
 h2{
 	text-align: center;
 	color: white;
+	text-shadow: 2px 2px #FF0000;
 }
 
 body {
@@ -38,6 +39,8 @@ h1 {
 	letter-spacing: -2px;
 	padding-top: 50px;
 	text-align: center;
+	z-index: 500;
+	
 
 	text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
 }
@@ -56,6 +59,7 @@ h1 {
 	height: 100%;
 	position: absolute;
 	left: 0px;
+	z-index: 499;
 	
 }
 .one{background-color: #00A3AA;}
