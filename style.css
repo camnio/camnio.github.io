@@ -24,7 +24,6 @@ body {
   border: 1px solid green;
  }
 .spin {
-  animation-delay: 2s;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
@@ -37,6 +36,7 @@ body {
   -ms-animation-duration: 1s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
+  animation-delay: 2s;
  }
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
