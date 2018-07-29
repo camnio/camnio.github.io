@@ -24,6 +24,7 @@ body {
   border: 1px solid green;
  }
 .spin {
+  animation-delay: 2s;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
