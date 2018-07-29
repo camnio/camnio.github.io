@@ -9,9 +9,7 @@ body {
 }
 
 #container {
-	width: 70%;
-	display: block;
-	margin: 0 auto;
+	width: 100%;
 	webkit-perspective: 750;
 }
 
