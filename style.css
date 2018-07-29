@@ -2,8 +2,12 @@ body {
   background-image: url('scotParrot.gif');
   background-repeat: repeat;
   background-color: #ff2e4c;
+  margin: 0px;
+  padding: 0px;
 }
 h1 {
   text-align: center;
   color: white;
+  margin: 0px;
+  font-family: arial;
 }
