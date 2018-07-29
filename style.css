@@ -4,12 +4,17 @@ body {
   background-color: #ff2e4c;
   margin: 0px;
   padding: 0px;
+  position: relative;
 }
 h1 {
   text-align: center;
   color: white;
   margin: 0px;
   font-family: arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 img {
   border: 1px solid red;
