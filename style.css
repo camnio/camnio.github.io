@@ -38,7 +38,6 @@ img {
   color: yellow;
 }
 .spin {
-  display: inline;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
