@@ -28,7 +28,10 @@ img {
   display: block;
   margin: 0 auto;
 }
-
+#delay {
+  transition-delay: 2s;
+  -webkit-transition-delay: 2s;
+}
 .spin {
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1s;
