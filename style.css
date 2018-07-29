@@ -10,8 +10,9 @@ body {
 
 #container {
 	width: 70%;
-
-	-webkit-perspective: 750;
+	display: block;
+	margin: 0 auto;
+	webkit-perspective: 750;
 }
 
 #shape {
@@ -20,7 +21,7 @@ body {
 	margin: 0 auto;
 	width: 250px; height: 250px;
 
-	-webkit-animation: spin 20s infinite linear;
+	-webkit-animation: spin 15s infinite linear;
 	-webkit-transform-style: preserve-3d;
 }
 
