@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	background: -webkit-gradient(radial, 800 64, 950, 500 400, 40,  from(#696868), to(#CFCFCF));
+	background-color: #FAF1DE;
 }
 
 #container {
@@ -22,16 +22,6 @@ body {
 
 	-webkit-animation: spin 20s infinite linear;
 	-webkit-transform-style: preserve-3d;
-}
-
-a img {
-	opacity: 0.8;
-
-	-webkit-transition: opacity 1s;
-}
-
-a:hover img {
-	opacity: 1;
 }
 
 h1 {
@@ -58,6 +48,13 @@ h1 {
 #shape > div img {
 	width: 100%; height: 100%;
 }
+.one{background-color: #00A3AA;}
+.two{background-color: #004eaa;}
+.three{background-color: #00aa5c;}
+.four{background-color: #E88876;}
+.five{background-color: #e8c176;}
+.six{background-color: #8A2BE2;}
+
 
 /* This is where the 3D magic happens */
 @-webkit-keyframes spin {
