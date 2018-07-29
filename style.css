@@ -31,6 +31,7 @@ img {
 #delay {
   transition-delay: 2s;
   -webkit-transition-delay: 2s;
+  transition-property: transform;
   color: red;
 }
 .spin {
