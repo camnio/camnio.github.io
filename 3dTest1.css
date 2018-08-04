@@ -1,0 +1,87 @@
+html,body{
+	height: 100%;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	position: relative;
+	padding-top: 50px;
+	text-align: center;
+}
+.container{
+	border: 1px dashed red;
+	display: inline-block;
+	perspective: 1000px;
+	perspective-origin: 50% 50%;
+}
+.cube{
+	transform-style: preserve-3d;
+	transform-origin: center;
+	animation: rotate 5s linear 0s infinite;
+	text-align: center;
+	font-family: Lucida Console, Monospace;
+}
+@keyframes rotate {
+    from {transform: rotateY(0deg) rotateX(10deg);}
+    to {transform: rotateY(360deg) rotateX(10deg);}
+}
+
+.face-front{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	transform: translateX(0px) translateY(0px) translateZ(15px);
+	transform-origin: center;
+	background-image: url(frog1.png);
+}
+.face-back{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	background-color: #353b48;
+	transform-origin: center;
+	transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(0deg);
+}
+.face-left{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30px;
+	height: 100%;
+	background-color: #353b48;
+	transform-origin: left;
+	transform: translateX(0px) translateY(0px) translateZ(15px) rotateY(90deg);
+}
+.face-right{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 30px;
+	height: 100%;
+	background-color: #353b48;
+	transform-origin: right;
+	transform: translateX(0px) translateY(0px) translateZ(15px) rotateY(270deg);
+}
+.face-top{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: #353b48;
+	transform-origin: top;
+	transform: translateX(0px) translateY(0px) translateZ(15px) rotateX(270deg);
+}
+.face-bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: #353b48;
+	transform-origin: bottom;
+	transform: translateX(0px) translateY(0px) translateZ(15px) rotateX(90deg);
+}
