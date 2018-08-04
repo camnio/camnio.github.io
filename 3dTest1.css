@@ -26,8 +26,8 @@ body{
     to {transform: rotateY(360deg) rotateX(10deg);}
 }
 svg,.svgCover{
-	fill: #353b48;
-	background-color: #353b48;
+	fill: red;
+	background-color: red;
 }
 .face-front{
 	width: 30%;
