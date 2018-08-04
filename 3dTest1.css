@@ -25,14 +25,15 @@ body{
     from {transform: rotateY(0deg) rotateX(10deg);}
     to {transform: rotateY(360deg) rotateX(10deg);}
 }
-
+svg,.svgCover{
+	fill: #353b48;
+	background-color: #353b48;
+}
 .face-front{
-	width: 300px;
-	height: 1100px;
+	width: 30%;
 	position: relative;
 	transform: translateX(0px) translateY(0px) translateZ(15px);
 	transform-origin: center;
-	background-image: url(frog1.png);
 }
 .face-back{
 	position: absolute;
