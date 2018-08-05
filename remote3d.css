@@ -2,10 +2,31 @@ html,body{
 	height: 100%;
 	box-sizing: border-box;
 	position: relative;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 body{
 	margin: 0;
 	background-color: #00b894;
+}
+.offline{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 999;
+}
+.offline h2{
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	font: bold 50px Lucida Console, Monospace;
+	background-color: #eb4d4b;
+	padding: 40px;
+	border: 8px outset #ffffff;
+	text-align: center;
 }
 h1{
 	position: absolute;
@@ -13,9 +34,10 @@ h1{
 	left: 0;
 	top: 0;
 	color: #ffffff;
-	width: 100%;
 	text-align: center;
-	font-size: 28px;
+	width: 100%;
+	font: bold 36px Lucida Console, Monospace;
+	z-index: -1;
 }
 .wrap{
 	width: 100%;
@@ -27,6 +49,7 @@ h1{
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
+	z-index: -1;
 }
 .container{
 	height: 100%;
@@ -47,20 +70,21 @@ h1{
 	transform-origin: center;
 	-webkit-transform-origin: center;
 	position: relative;
-	animation: rotate 4s linear 0s infinite alternate;
-	-webkit-animation: rotate 4s linear 0s infinite alternate;
+	animation: rotate 5s linear 0s infinite;
+	-webkit-animation: rotate 5s linear 0s infinite;
 }
-.cube:hover, .cube:active{
+.cube:link{}
+.cube:hover, .cube:active,.cube:target{
 	animation-play-state: paused;
 	-webkit-animation-play-state: paused;
 }
 @keyframes rotate {
-    from {transform: rotateY(-45deg) rotateX(10deg);}
-    to {transform: rotateY(45deg) rotateX(10deg);}
+    from {transform: rotateY(0deg) rotateX(5deg);}
+    to {transform: rotateY(360deg) rotateX(5deg);}
 }
 @-webkit-keyframes rotate {
-    from {-webkit-transform: rotateY(-45deg) rotateX(10deg);}
-    to {-webkit-transform: rotateY(45deg) rotateX(10deg);}
+    from {-webkit-transform: rotateY(0deg) rotateX(10deg);}
+    to {-webkit-transform: rotateY(360deg) rotateX(10deg);}
 }
 .face-front{
 	position: relative;
@@ -86,6 +110,10 @@ h1{
 	-webkit-transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(180deg);
 	border: 1px solid black;
 	box-sizing: border-box;
+
+	color: #ffffff;
+	font: bold 36px Lucida Console, Monospace;
+	text-align: center;
 }
 .face-left{
 	position: absolute;
@@ -167,9 +195,10 @@ svg,.svgCover{
 	position: relative;
 	stroke: black;
 	stroke-width: 1px; 
+
 }
 .buttonGrey{fill: #dfe4ea;}
-.buttonGrey:hover, .buttonGrey:active{fill: #a4b0be;}
+.buttonGrey:hover{fill: #a4b0be;}
 .buttonRed{fill: #ff6348;}
 .buttonRed:hover{fill: #ff4757;}
 .buttonBlue{fill: #487eb0;}

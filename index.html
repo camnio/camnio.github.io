@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="remote3d.css?version=7">
+	<link rel="stylesheet" type="text/css" href="remote3d.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remote Remote Control</title>
 	<!--I am bad at this avert your eyes-->
 </head>	
 <body ontouchstart="">
 	<h1>Remote Remote Control</h1>
 	<div class="wrap">
 		<div class="container">
-			<div class="cube" onclick="">
+			<div class="cube">
 				<svg  viewBox="0 0 330 1190" class="face-front">
 					<!--Row1-->
 					<circle cx="45" cy="40" r="30" class="button buttonRed" id="KEY_POWER"/>
@@ -107,7 +108,7 @@
 					<text text-anchor="middle" x="165" y="1170" class="smallerText">AD</text>
 					<text text-anchor="middle" x="285" y="1170" class="smallerText">SUBT</text>
 				</svg>
-				<div class="face-back" style="color: white;font-size: 40px">Greg sucks</div>
+				<div class="face-back">Fuck You</div>
 				<div class="face-left"></div>
 				<div class="face-right"></div>
 				<div class="face-top"></div>
@@ -115,7 +116,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="offline">
+		<h2>Unauthorised Connection</h2>
+	</div>
 	<script>
+		document.addEventListener("touchstart", function() {},false);
 		function displayInfo(){
 			alert("Sending signal: " + this.id);
 			//Connect to backend here
