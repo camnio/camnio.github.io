@@ -22,7 +22,7 @@ body{
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
-	font: bold 50px Lucida Console, Monospace;
+	font: bold 30px Lucida Console, Monospace;
 	background-color: #eb4d4b;
 	padding: 40px;
 	border: 8px outset #ffffff;
