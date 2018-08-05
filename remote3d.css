@@ -52,12 +52,12 @@ h1{
 	-webkit-animation-play-state: paused;
 }
 @keyframes rotate {
-    from {transform: rotateY(0deg) rotateX(10deg);}
-    to {transform: rotateY(360deg) rotateX(10deg);}
+    from {transform: rotateY(-45deg) rotateX(10deg);}
+    to {transform: rotateY(45deg) rotateX(10deg);}
 }
 @-webkit-keyframes rotate {
-    from {-webkit-transform: rotateY(0deg) rotateX(10deg);}
-    to {-webkit-transform: rotateY(360deg) rotateX(10deg);}
+    from {-webkit-transform: rotateY(-45deg) rotateX(10deg);}
+    to {-webkit-transform: rotateY(45deg) rotateX(10deg);}
 }
 .face-front{
 	position: relative;
