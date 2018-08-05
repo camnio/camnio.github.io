@@ -27,6 +27,8 @@ body{
 	padding: 40px;
 	border: 8px outset #ffffff;
 	text-align: center;
+	box-sizing: border-box;
+	max-width: 90%;
 }
 h1{
 	position: absolute;
