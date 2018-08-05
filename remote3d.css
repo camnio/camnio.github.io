@@ -166,7 +166,7 @@ svg,.svgCover{
 	stroke-width: 1px; 
 }
 .buttonGrey{fill: #dfe4ea;}
-.buttonGrey:hover{fill: #a4b0be;}
+.buttonGrey:hover, .buttonGrey:active{fill: #a4b0be;}
 .buttonRed{fill: #ff6348;}
 .buttonRed:hover{fill: #ff4757;}
 .buttonBlue{fill: #487eb0;}
