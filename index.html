@@ -1,49 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Oi you cheeky wanker!</title>
-	<style type="text/css">
-		html,body{
-			height: 100%;
-		}
-		body{
-			margin: 0;
-			position: relative;
-		}
-		img{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			height: 100%;
-			opacity: 0;
-			transform-origin: center;
-		}
-		#police{
-			webkit-animation: grow 0.6s 1s linear;
-			webkit-animation-fill-mode: forwards;
-			animation: grow 0.6s 1s linear;
-			animation-fill-mode: forwards;
-		}
-		#eyes{
-			webkit-animation: eyes 0s 1.8s linear;
-			webkit-animation-fill-mode: forwards;
-			animation: eyes 0s 1.6s linear;
-			animation-fill-mode: forwards;
-		}
-
-		@-webkit-keyframes grow {
-			from { -webkit-transform: translate(-50%, -50%) scale(0.1); opacity: 1; }
-			to   { -webkit-transform: translate(-50%, -50%) scale(1); opacity: 1;}
-		}
-		@-webkit-keyframes eyes {
-			from { opacity: 0; }
-			to   { opacity: 1;}
-		}
-	</style>
-</head>
+	<link rel="stylesheet" type="text/css" href="remote3d.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--I am bad at this avert your eyes-->
+</head>	
 <body>
-	<img src="cheeky.png" id="police">
-	<img src="specialEyes.png" id="eyes">
+	<h1>Remote Remote Control V2</h1>
+	<div class="wrap">
+		<div class="container">
+			<div class="cube">
+				<svg  viewBox="0 0 330 1190" class="face-front">
+					<!--Row1-->
+					<circle cx="45" cy="40" r="30" class="button buttonRed" id="KEY_POWER"/>
+					<rect width="90" height="50" x="240" y="15" rx="5" ry="5" class="button buttonGrey" id="KEY_TV"/>
+					<text text-anchor="middle" x="285" y="52">TV</text>
+					<!--Row2-->
+					<rect width="90" height="50" x="0" y="110" rx="5" ry="5" class="button buttonGrey" id="KEY_1"/>
+					<rect width="90" height="50" x="120" y="110" rx="5" ry="5" class="button buttonGrey" id="KEY_2"/>
+					<rect width="90" height="50" x="240" y="110" rx="5" ry="5" class="button buttonGrey" id="KEY_3"/>
+					<text text-anchor="middle" x="45" y="147">1</text>
+					<text text-anchor="middle" x="165" y="147">2</text>
+					<text text-anchor="middle" x="285" y="147">3</text>
+					<!--Row3-->
+					<rect width="90" height="50" x="0" y="190" rx="5" ry="5" class="button buttonGrey" id="KEY_4"/>
+					<rect width="90" height="50" x="120" y="190" rx="5" ry="5" class="button buttonGrey" id="KEY_5"/>
+					<rect width="90" height="50" x="240" y="190" rx="5" ry="5" class="button buttonGrey" id="KEY_6"/>
+					<text text-anchor="middle" x="45" y="227">4</text>
+					<text text-anchor="middle" x="165" y="227">5</text>
+					<text text-anchor="middle" x="285" y="227">6</text>
+					<!--Row4-->
+					<rect width="90" height="50" x="0" y="270" rx="5" ry="5" class="button buttonGrey" id="KEY_7"/>
+					<rect width="90" height="50" x="120" y="270" rx="5" ry="5" class="button buttonGrey" id="KEY_8"/>
+					<rect width="90" height="50" x="240" y="270" rx="5" ry="5" class="button buttonGrey" id="KEY_9"/>
+					<text text-anchor="middle" x="45" y="307">7</text>
+					<text text-anchor="middle" x="165" y="307">8</text>
+					<text text-anchor="middle" x="285" y="307">9</text>
+					<!--Row5-->
+					<rect width="90" height="50" x="0" y="350" rx="5" ry="5" class="button buttonGrey" id="KEY_FAVORITES"/>
+					<rect width="90" height="50" x="120" y="350" rx="5" ry="5" class="button buttonGrey" id="KEY_0"/>
+					<rect width="90" height="50" x="240" y="350" rx="5" ry="5" class="button buttonGrey" id="KEY_PREVIOUS"/>
+					<text text-anchor="middle" x="45" y="383" class="smallerText">Fav</text>
+					<text text-anchor="middle" x="165" y="387">0</text>
+					<text text-anchor="middle" x="285" y="383" class="smallerText">Pre</text>
+					<!--Row6-->
+					<rect width="100" height="85" x="0" y="430" rx="5" ry="5" class="button buttonBlue" id="KEY_VOLUMEUP"/>
+					<rect width="100" height="85" x="0" y="515" rx="5" ry="5" class="button buttonBlue" id="KEY_VOLUMEDOWN"/>
+					<rect width="80" height="40" x="125" y="445" rx="5" ry="5" class="button buttonGrey" id="KEY_MUTE"/>
+					<rect width="80" height="40" x="125" y="540" rx="5" ry="5" class="button buttonGrey" id="KEY_SWITCHVIDEOMODE"/>
+					<rect width="100" height="85" x="230" y="430" rx="5" ry="5" class="button buttonBlue" id="KEY_CHANNELUP"/>
+					<rect width="100" height="85" x="230" y="515" rx="5" ry="5" class="button buttonBlue" id="KEY_CHANNELDOWN"/>
+					<text text-anchor="middle" x="50" y="470">+</text>
+					<text text-anchor="middle" x="50" y="590">-</text>
+					<text text-anchor="middle" x="165" y="475" class="smallerText">Mute</text>
+					<text text-anchor="middle" x="165" y="570" class="smallerText">Source</text>
+					<text text-anchor="middle" x="280" y="470">&#9650;</text>
+					<text text-anchor="middle" x="280" y="590">&#9660;</text>
+					<!--Row7-->
+					<rect width="90" height="40" x="0" y="630" rx="5" ry="5" class="button buttonGrey" id="KEY_INFO"/>
+					<rect width="90" height="80" x="120" y="630" rx="5" ry="5" class="button buttonGreen" id="KEY_MENU"/>
+					<rect width="90" height="40" x="240" y="630" rx="5" ry="5" class="button buttonGrey" id="KEY_GUIDE"/>
+					<text text-anchor="middle" x="45" y="660" class="smallerText">Info</text>
+					<text text-anchor="middle" x="165" y="675" class="smallerText">Menu</text>
+					<text text-anchor="middle" x="285" y="660" class="smallerText">Guide</text>
+					<!--Row8-->
+					<rect width="90" height="90" x="0" y="710" rx="5" ry="5" class="button buttonGrey" id="KEY_TOOLS"/>
+					<rect width="90" height="90" x="240" y="710" rx="5" ry="5" class="button buttonGrey" id="KEY_RETURN"/>
+					<rect width="90" height="90" x="240" y="950" rx="5" ry="5" class="button buttonGrey" id="KEY_EXIT"/>
+					<rect width="90" height="90" x="0" y="950" rx="5" ry="5" class="button buttonGrey" id="KEY_LIST"/>
+					<circle cx="165" cy="875" r="165" class="svgCover" />
+					<defs>
+						<clipPath id="up">
+							<polygon points="50,750 165,865 280,750"/>
+						</clipPath>
+						<clipPath id="right">
+							<polygon points="290,760 175,875 290,990"/>
+						</clipPath>
+						<clipPath id="down">
+							<polygon points="280,1000 165,885 50,1000"/>
+						</clipPath>
+						<clipPath id="left">
+							<polygon points="40,990 155,875 40,760"/>
+						</clipPath>
+					</defs>
+					<text text-anchor="middle" x="45" y="755" class="smallerText" transform="rotate(315,45,755)">Tools</text>
+					<text text-anchor="middle" x="285" y="755" class="smallerText" transform="rotate(45,285,755)">Return</text>
+					<text text-anchor="middle" x="285" y="1015" class="smallerText" transform="rotate(315,285,995)">Exit</text>
+					<text text-anchor="middle" x="45" y="1015" class="smallerText" transform="rotate(45,45,995)">List</text>
+					<circle cx="165" cy="875" r="125" clip-path="url(#up)" class="button buttonGrey" id="KEY_UP"/>
+					<circle cx="165" cy="875" r="125" clip-path="url(#right)" class="button buttonGrey" id="KEY_RIGHT"/>
+					<circle cx="165" cy="875" r="125" clip-path="url(#down)" class="button buttonGrey" id="KEY_DOWN"/>
+					<circle cx="165" cy="875" r="125" clip-path="url(#left)" class="button buttonGrey" id="KEY_LEFT"/>
+					<circle cx="165" cy="875" r="80" class="svgCover"/>
+					<circle cx="165" cy="875" r="50" class="button buttonGrey" id="KEY_ENTER"/>
+					<!--Row9-->
+					<rect width="60" height="40" x="0" y="1070" rx="5" ry="5" class="button buttonRed" id="KEY_RED"/>
+					<rect width="60" height="40" x="90" y="1070" rx="5" ry="5" class="button buttonGreen" id="KEY_GREEN"/>
+					<rect width="60" height="40" x="180" y="1070" rx="5" ry="5" class="button buttonYellow" id="KEY_YELLOW"/>
+					<rect width="60" height="40" x="270" y="1070" rx="5" ry="5" class="button buttonBlue" id="KEY_BLUE"/>
+					<!--Row10-->
+					<rect width="90" height="40" x="0" y="1140" rx="5" ry="5" class="button buttonGrey" id="KEY_UNKNOWN"/>
+					<rect width="90" height="40" x="120" y="1140" rx="5" ry="5" class="button buttonGrey" id="KEY_AUDIODESCRIPTION"/>
+					<rect width="90" height="40" x="240" y="1140" rx="5" ry="5" class="button buttonGrey" id="KEY_SUBTITLE"/>
+
+					<text text-anchor="middle" x="45" y="1170" class="smallerText">NULL</text>
+					<text text-anchor="middle" x="165" y="1170" class="smallerText">AD</text>
+					<text text-anchor="middle" x="285" y="1170" class="smallerText">SUBT</text>
+				</svg>
+				<div class="face-back"></div>
+				<div class="face-left"></div>
+				<div class="face-right"></div>
+				<div class="face-top"></div>
+				<div class="face-bottom"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function displayInfo(){
+			alert("Sending signal: " + this.id);
+			//Connect to backend here
+		} 
+		var defaultButtons = document.getElementsByClassName("button");
+		for (var i = 0; i < defaultButtons.length; i++) {
+			defaultButtons[i].addEventListener('click', displayInfo, false);
+		}
+	</script>
 </body>
 </html>
