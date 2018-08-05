@@ -79,8 +79,8 @@ h1{
 	background-color: #353b48;
 	transform-origin: center;
 	-webkit-transform-origin: center;
-	transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(0deg);
-	-webkit-transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(0deg);
+	transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(180deg);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(-15px) rotateY(180deg);
 	border: 1px solid black;
 	box-sizing: border-box;
 }
