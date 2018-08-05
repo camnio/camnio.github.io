@@ -44,8 +44,8 @@ h1{
 	transform-origin: center;
 	-webkit-transform-origin: center;
 	position: relative;
-	animation: rotate 4s linear 0s infinite;
-	-webkit-animation: rotate 4s linear 0s infinite;
+	animation: rotate 4s linear 0s infinite alternate;
+	-webkit-animation: rotate 4s linear 0s infinite alternate;
 }
 .cube:hover, .cube:active{
 	animation-play-state: paused;
