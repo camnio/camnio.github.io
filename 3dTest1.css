@@ -17,13 +17,13 @@ body{
 .cube{
 	transform-style: preserve-3d;
 	transform-origin: center;
-	animation: rotate 5s linear 0s infinite;
+	animation: rotate 5s linear 0s infinite alternate;
 	text-align: center;
 	font-family: Lucida Console, Monospace;
 }
 @keyframes rotate {
-    from {transform: rotateY(0deg) rotateX(10deg);}
-    to {transform: rotateY(360deg) rotateX(10deg);}
+    from {transform: rotateY(-45deg) rotateX(10deg);}
+    to {transform: rotateY(45deg) rotateX(10deg);}
 }
 svg,.svgCover{
 	fill: red;
