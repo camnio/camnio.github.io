@@ -13,6 +13,8 @@ h1{
 	left: 0;
 	top: 0;
 	color: #ffffff;
+	width: 100%;
+	text-align: center;
 }
 .wrap{
 	width: 100%;
