@@ -72,8 +72,8 @@ h1{
 	transform-origin: center;
 	-webkit-transform-origin: center;
 	position: relative;
-	animation: rotate 5s linear 0s infinite;
-	-webkit-animation: rotate 5s linear 0s infinite;
+	animation: rotate 5s linear 0s infinite alternate;
+	-webkit-animation: rotate 5s linear 0s infinite alternate;
 }
 .cube:link{}
 .cube:hover, .cube:active,.cube:target{
