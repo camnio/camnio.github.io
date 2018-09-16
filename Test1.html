@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="spooky">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spook test</title>	
+  <style type="text/css">
+    html{
+      height: 100%;
+    }
+    body{
+      background-color: red;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .main{
+      border: 1px solid black;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+     }
+     .timerContainer{
+       border: 1px dashed green;
+       position: absolute;
+       left: 0;
+       top: 0;
+     }
+     .timerTitle{
+       text-align: center;
+       margin: 0;
+     }
+     .timer{
+       min-height: 50px;
+     }
+     .stage5 .main{
+       background-color: blue;
+      }
+      .defcon{
+        width: 100%;
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+  </style>
+</head>
+<body id="body">
+  <div class="main">
+    <div class="defcon defcon1">1</div>
+    <div class="defcon defcon1">2</div>
+    <div class="defcon defcon1">3</div>
+    <div class="defcon defcon1">4</div>
+    <div class="defcon defcon1">5</div>
+    <div class="timerContainer">
+      <h1 class="timerTitle">test</h1>
+      <div class="timer">
+        <span id="daysSpan">days</span>
+        <span id="hoursSpan">hours</span>
+        <span id="minutesSpan">minutes</span>
+        <span id="secondsSpan">seconds</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    function countdown(){
+      daysDisplay = document.getElementById("daysSpan");
+      hoursDisplay = document.getElementById("hoursSpan");
+      minutesDisplay = document.getElementById("minutesSpan");
+      secondsDisplay = document.getElementById("secondsSpan");
+      body = document.getElementById("body");
+      switch(calcDays()){
+        case 44:
+          body.className = "stage5";
+          console.log("stage 5");
+          break;
+        case 39:
+          console.log("hhhhhh");
+          break;
+      }
+      function calcDistance(){
+        var end = new Date(2018,9,31).getTime();
+        var now = new Date().getTime();
+        var distance = end - now;
+        return distance;
+      }
+      function calcDays(){
+        var distance = calcDistance();
+        var daysLeft = Math.floor(distance / (1000 * 60  * 60 * 24));
+        return daysLeft;
+      }
+      function timer(){
+        var distance = calcDistance();
+        var daysLeft = calcDays();
+        var hoursLeft = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutesLeft = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var secondsLeft = Math.floor((distance % (1000 * 60)) / 1000);
+        daysDisplay.textContent = daysLeft + " days";
+        hoursDisplay.textContent = hoursLeft + " hours";""
+        minutesDisplay.textContent = minutesLeft + " minutes";
+        secondsDisplay.textContent = secondsLeft + " seconds";
+      }
+      setInterval(timer,1000);
+    }
+    countdown();
+  </script>
+</body>
+</html>
