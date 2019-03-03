@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1>bad movie scraper</h1>
+	<input type="text" id="searchInput"></input>
+	<button onclick="searchFunction()">search</button>
+	<h5>how to format TV show searches:</h5>
+	<h6>chucklevision S01 E02</h6>
+	
+	<script type="text/javascript">
+		function searchFunction() {
+			var input = document.getElementById("searchInput").value;
+			var filter = "+(mkv|mp4|avi|mov|mpg|wmv) -inurl:(jsp|pl|php|html|aspx|htm|cf|shtml) intitle:index.of -inurl:(listen77|mp3raid|mp3toss|mp3drug|index_of|wallywashis)";
+			var url = "https://www.google.com/search?q=";
+			if(input.length == 0){
+				alert("nothing");
+				return -1;
+			}
+			input = input + " " + filter;
+			window.open(url + input,"_self")
+		}
+	</script>
+	<style type="text/css">
+	body {
+		display: inline-block;
+		text-align: center;
+		background-color: #E7E5DF;
+	}
+	input,button {
+		display: inline-block;
+	}
+	h1{
+		text-align: center;
+	}
+	</style>
+</body>
+</html>
